@@ -34,16 +34,4 @@ FileNameSpec.java -> FileName.java
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 0.0.1
-
-- Initial release
-- Ability to jump to corresponding spec/test file based on current file's name
-
-### 0.0.2
-- Add default keybinding as ctrl+alt+t
-
-### 0.0.3
-- Third tries the charm
-- Update display name and description
+All releases are experimental at this point as I test things in the marketplace.

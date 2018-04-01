@@ -15,3 +15,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.3] - 2018-03-31
 - Third tries the charm
 - Update display name and description
+
+## [0.0.4] - 2018-04-01
+- Second try at adding default keybinding

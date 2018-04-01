@@ -2,7 +2,7 @@
     "name": "jump-to-test",
     "displayName": "Jump to Test",
     "description": "Open spec/test file based on current file's name",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "blakeh",
     "engines": {
         "vscode": "^1.21.0"
@@ -18,7 +18,12 @@
         "commands": [
             {
                 "command": "extension.jumpToTest",
-                "title": "Jump to Test",
+                "title": "Jump to Test"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.jumpToTest",
                 "key": "ctrl+alt+t",
                 "mac": "ctrl+alt+t",
                 "when": "editorTextFocus"

@@ -40,3 +40,6 @@ Users appreciate release notes as you update your extension.
 
 - Initial release
 - Ability to jump to corresponding spec/test file based on current file's name
+
+### 0.0.2
+- Add default keybinding as ctrl+alt+t

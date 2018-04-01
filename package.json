@@ -2,7 +2,7 @@
     "name": "jump-to-test",
     "displayName": "jump-to-test",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "blakeh",
     "engines": {
         "vscode": "^1.21.0"
@@ -18,7 +18,8 @@
         "commands": [
             {
                 "command": "extension.jumpToTest",
-                "title": "Jump to Test"
+                "title": "Jump to Test",
+                "key": "ctrl+alt+t"
             }
         ]
     },
@@ -40,5 +41,5 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/blakeherrington/vscode-jump-to-test"
-}
+    }
 }

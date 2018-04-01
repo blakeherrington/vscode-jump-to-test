@@ -40,7 +40,3 @@ Users appreciate release notes as you update your extension.
 
 - Initial release
 - Ability to jump to corresponding spec/test file based on current file's name
-
-https://github.com/blakeherrington/vscode-jump-to-test
-
------------------------------------------------------------------------------------------------------------

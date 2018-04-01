@@ -15,10 +15,12 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.jumpToTest",
-            "title": "Jump to Test"
-        }]
+        "commands": [
+            {
+                "command": "extension.jumpToTest",
+                "title": "Jump to Test"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

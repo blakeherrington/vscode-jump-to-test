@@ -6,9 +6,11 @@ This extension registers a command that will open the corresponding test file of
 
 When the command is issued, your editor will jump to the test file if the extension is able to find one.
 
+<img src='https://raw.githubusercontent.com/blakeherrington/vscode-jump-to-test/master/src/images/jump-to-test.gif'>
+
 If it is unable find a test file, you will see a message in the status bar indicating the failure (see below).
 
-<img src='src/images/notfound.png'>
+<img src='https://raw.githubusercontent.com/blakeherrington/vscode-jump-to-test/master/src/images/notfound.png'>
 
 The extension should be able to successfully take you between files named in the following patterns, agnostic of extensions:
 

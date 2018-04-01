@@ -43,3 +43,7 @@ Users appreciate release notes as you update your extension.
 
 ### 0.0.2
 - Add default keybinding as ctrl+alt+t
+
+### 0.0.3
+- Third tries the charm
+- Update display name and description

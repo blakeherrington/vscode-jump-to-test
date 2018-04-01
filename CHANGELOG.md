@@ -11,3 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.0.2] - 2018-03-31
 - Add default keybinding as ctrl+alt+t
+
+## [0.0.3] - 2018-03-31
+- Third tries the charm
+- Update display name and description

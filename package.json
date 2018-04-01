@@ -18,7 +18,8 @@
         "commands": [
             {
                 "command": "extension.jumpToTest",
-                "title": "Jump to Test"
+                "title": "Jump to Test",
+                "key": "ctrl+alt+t"
             }
         ]
     },

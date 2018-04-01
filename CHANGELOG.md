@@ -8,3 +8,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.1] - 2018-03-31
 - Initial release
 - Ability to jump to corresponding spec/test file based on current file's name
+
+## [0.0.2] - 2018-03-31
+- Add default keybinding as ctrl+alt+t

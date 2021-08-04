@@ -19,6 +19,10 @@
             {
                 "command": "extension.jumpToTest",
                 "title": "Jump to Test"
+            },
+            {
+                "command": "extension.jumpToTestSplit",
+                "title": "Jump to Test (Split)"
             }
         ],
         "keybindings": [

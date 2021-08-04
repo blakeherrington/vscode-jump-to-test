@@ -4,7 +4,10 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
-  let disposable = vscode.commands.registerCommand('extension.jumpToTest', () => {
+  function jumpToTest() {jumpTo(false)}
+  function jumpToTestSplit() {jumpTo(true)}
+
+  function jumpTo(split) {
     const splitFileName: string[] = path.basename(vscode.window.activeTextEditor.document.fileName).split(".");
     const fileName: string = splitFileName.slice(0,-1).join('');
     const extension: string = splitFileName[splitFileName.length-1];
@@ -18,7 +21,13 @@ export function activate(context: vscode.ExtensionContext) {
         return;  
       }  
 
-      vscode.commands.executeCommand('vscode.open', vscode.Uri.file(ps[0].path));
+      if (split) {
+        vscode.window.showTextDocument(vscode.Uri.file(ps[0].path), {
+            viewColumn: vscode.ViewColumn.Beside
+        });
+      } else {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.file(ps[0].path));
+      }
     });
 
     function determineGlobPattern(globPattern: string, extension: string): string {
@@ -52,5 +61,8 @@ export function activate(context: vscode.ExtensionContext) {
     }
   });
 
-  context.subscriptions.push(disposable);
+  let disposableJumpTo = vscode.commands.registerCommand('extension.jumpToTest', jumpToTest)
+  let disposableJumpToSplit = vscode.commands.registerCommand('extension.jumpToTestSplit', jumpToTestSplit)
+  context.subscriptions.push(disposableJumpTo);
+  context.subscriptions.push(disposableJumpToSplit);
 }

@@ -11,7 +11,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.jumpToTest"
+        "onCommand:extension.jumpToTest",
+        "onCommand:extension.jumpToTestSplit"
     ],
     "main": "./out/extension",
     "contributes": {

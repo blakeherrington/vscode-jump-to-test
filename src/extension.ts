@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
 
       if (split) {
         vscode.window.showTextDocument(vscode.Uri.file(ps[0].path), {
-            viewColumn: vscode.ViewColumn.Beside
+            viewColumn: vscode.ViewColumn.Two
         });
       } else {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.file(ps[0].path));
@@ -59,10 +59,10 @@ export function activate(context: vscode.ExtensionContext) {
     function addPostfix(globPattern: string): string {
       return globPattern.includes('_') ? '_' : '';
     }
-  });
+  }
 
-  let disposableJumpTo = vscode.commands.registerCommand('extension.jumpToTest', jumpToTest)
-  let disposableJumpToSplit = vscode.commands.registerCommand('extension.jumpToTestSplit', jumpToTestSplit)
+  let disposableJumpTo = vscode.commands.registerCommand('extension.jumpToTest', jumpToTest);
+  let disposableJumpToSplit = vscode.commands.registerCommand('extension.jumpToTestSplit', jumpToTestSplit);
   context.subscriptions.push(disposableJumpTo);
   context.subscriptions.push(disposableJumpToSplit);
 }
